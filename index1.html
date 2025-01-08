@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To-Do List</title>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <nav class="nav">
+        <a href="#data">Мои задачи</a>
+        <a href="index2.html" target="_blank">Имя пользователя</a>
+      </nav>     
+    </header>
+    <main>
+      <div id="data">
+        <h1>Мои дела</h1>
+
+        <div class="choice">
+          <button class="show-all">Показать все</button>
+          <button class="show-done">Показать выполненные</button>
+          <button class="show-not-done">Показать невыполненные</button>
+        </div>
+
+        <div class="new-do">
+          <input id="inpt" type="text" placeholder="Добавить новую задачу">
+          <button id="btn">Добавить задачу</button>
+        </div>
+      </div>
+
+      <div class="all-content">
+        <ul class="list" id="todo-list"></ul>
+      </div>
+       
+      <div class="done-content">
+        <ul class="list" id="done-list"></ul>
+      </div> 
+      
+      <div class="done-not-content">
+        <ul class="list" id="done-not-list"></ul>
+      </div>  
+      
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
